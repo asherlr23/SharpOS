@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 class GlobalLogger
 {
@@ -8,20 +9,21 @@ class GlobalLogger
         List<GlobalLogger> systemLog = new List<GlobalLogger>();
         openListIDs = 0;
     }
-    public static void Log(string location, string info, string listName = location + openListIDs + 1) 
+
+    public static void Log(string location, string info, string listName;)
     {
-        if (location.ToUpper() = "SYSTEM") 
+        if (location.ToUpper() = "SYSTEM")
         {
             systemLog.Add("[" + location.ToUpper() + "] " + info);
         }
         else
         {
-            List<GlobalLogger> listName = new List<GlobalLogger>();
-            if(listName = location + openListIDs + 1) 
+            List<GlobalLogger> $"{listName}" = new List<GlobalLogger>();
+            if (listName = location + openListIDs + 1)
             {
                 openListIDs++;
             }
         }
-    
+
     }
 }
