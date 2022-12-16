@@ -15,7 +15,7 @@ namespace SharpOSMain
 
                if (os.debug_status = true) 
                {
-                 Console.ReadKey();
+                  Console.ReadKey();
                }
 
             }
