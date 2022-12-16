@@ -46,4 +46,16 @@ class SharpOSUtils {
             }
         }
     }
+    public void CreateThreadTimer(string timerName, int length)
+    {
+      Thread timerName = Thread.CurrentThread;
+      timerName.Name = $"{timerName}";
+      timerName.Start();
+      for(int csecond = 0; csecond > length; csecond++)
+      {
+        Thread.Sleep(1000);
+      }
+      Logger.log("System", $"Finished Timer {timerName}");
+      timerName.Stop();
+    }
 }
