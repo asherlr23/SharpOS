@@ -8,10 +8,16 @@ namespace SharpOSMain
     {
             public static void Main()
             {
-                SharpOSUtils os = new SharpOSUtils("B20221215.1");
+                SharpOSUtils os = new SharpOSUtils("B20221215.1", true);
                 GlobalLogger localLog = new GlobalLogger();
-                GlobalLogger global = new GlobalLogger();
+
                 Console.Write(os.logger.systemLog);
+
+               if (os.debug_status = true) 
+               {
+                 Console.ReadKey();
+               }
+
             }
     }
 
