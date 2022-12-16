@@ -9,6 +9,9 @@ namespace SharpOSMain
             public static void Main()
             {
                 SharpOSUtils os = new SharpOSUtils("B20221215.1");
+                GlobalLogger localLog = new GlobalLogger();
+                GlobalLogger global = new GlobalLogger();
+                Console.Write(os.logger.systemLog);
             }
     }
 

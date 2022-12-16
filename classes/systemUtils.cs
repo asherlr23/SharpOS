@@ -8,7 +8,7 @@ class SharpOSUtils {
       {
          buildType = Char.ToUpper(build[1]);
          bool debug_status = debugMode;
-        Logger.Log("System", "Loaded SharpOS Utils, Getting time and date");
+        Logger.Log("System", "Loaded SharpOS Utils, Getting time and date"); // TODO: Actually figure out how im supposed to do this
         
       }
     public int current_version {
